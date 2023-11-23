@@ -36,7 +36,7 @@ export default {
               <router-link class="nav-link" to="/about">About us</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/projects">Cocktails</router-link>
+              <router-link class="nav-link" to="/cocktails">Cocktails</router-link>
             </li>
 
 

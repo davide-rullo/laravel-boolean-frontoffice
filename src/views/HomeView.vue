@@ -5,9 +5,9 @@
             <div class="wrapper d-flex justify-content-center align-items-center">
                 <div class="container text-center text-white jumbo-cont">
                     <h2 class="pb-3">Pixies cocktail Bar</h2><br>
-                    <h3>A world where each moment is crafted with care and each drink is
+                    <h3 class="pb-3">A world where each moment is crafted with care and each drink is
                         an invitation to savor the exceptional.</h3>
-                    <router-link class=" btn cta" to="/projects">Explore the menu</router-link>
+                    <router-link class=" cta" to="/projects">Explore the menu</router-link>
                 </div>
             </div>
         </section>
@@ -43,5 +43,8 @@ export default {
 .cta {
     border-radius: 1rem;
     background-color: #fdd03b;
+    padding: .5rem;
+    color: black;
+    margin-top: 3rem;
 }
 </style>

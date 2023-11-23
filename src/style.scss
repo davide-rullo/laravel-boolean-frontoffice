@@ -1,1 +1,6 @@
-@use 'bootstrap'
+@use 'bootstrap';
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

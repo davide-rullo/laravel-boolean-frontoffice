@@ -1,13 +1,14 @@
 <template>
     <div>
         <section class="jumbo">
-
             <div class="wrapper d-flex justify-content-center align-items-center">
-                <div class="container text-center text-white jumbo-cont">
-                    <h2 class="pb-3">Pixies cocktail Bar</h2><br>
-                    <h3 class="pb-3">A world where each moment is crafted with care and each drink is
+                <div class="text-white jumbo-cont">
+                    <h2 class="pb-3">BOOLEAN COCKTAIL BAR</h2><br>
+                    <h3 class="pb-3 col-6">A world where each moment is crafted with care and each drink is
                         an invitation to savor the exceptional.</h3>
-                    <router-link class=" cta" to="/projects">Explore the menu</router-link>
+                    <div class="col-4 text-center pt-4">
+                        <router-link class="cta p-2 px-3" to="/cocktails">Show our menu! ⭐</router-link>
+                    </div>
                 </div>
             </div>
         </section>
@@ -17,11 +18,8 @@
 </template>
 
 <script>
-
-
 export default {
     name: 'HomeView',
-
 }
 </script>
 
@@ -34,6 +32,7 @@ export default {
     background-image: url('../assets/bar.jpg');
     background-size: cover;
     margin-top: -65px;
+    height: 1000px;
 }
 
 .jumbo-cont {
@@ -46,5 +45,9 @@ export default {
     padding: .5rem;
     color: black;
     margin-top: 3rem;
+}
+
+h2 {
+    color: #fdd03b;
 }
 </style>

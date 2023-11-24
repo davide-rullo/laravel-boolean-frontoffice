@@ -7,6 +7,7 @@ import AlcoholCardView from "./views/AlcoholCardView.vue";
 import AlcoholFreeCardView from "./views/AlcoholFreeCardView.vue";
 
 
+
 import ContactsView from "./views/ContactsView.vue";
 
 
@@ -49,6 +50,8 @@ const routes = [
         name: 'alcohol_free',
         component: AlcoholFreeCardView
     },
+
+    
 
 
 

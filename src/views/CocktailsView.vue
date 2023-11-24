@@ -48,7 +48,7 @@ h3 {
 }
 
 .jumbotron {
-    background-image: url(https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg?w=1380&t=st=1700843678~exp=1700844278~hmac=aab95bd0a0e990796e4dc82d8ba0183eb4b99de6d1cc41a9b118e68413ab9e78);
+    background-image: url(https://media-assets.lacucinaitaliana.it/photos/61fa685528bbd1b96fb659a2/16:9/w_1920,c_limit/iStock-620723770.jpg);
     background-size: cover;
     margin-top: -65px;
     height: 1000px;

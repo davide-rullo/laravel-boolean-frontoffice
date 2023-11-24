@@ -3,7 +3,7 @@
         <section class="about pt-4">
             <div class="container pt-4 pb-4 d-flex gap-5">
                 <div class="row row-cols-1 row-cols-sm-2">
-                    <div class="col">
+                    <div class="col d-flex align-items-center">
                         <img class="img-fluid p-2"
                             src="https://flawless.life/wp-content/uploads/2023/06/I-Migliori-Cocktail-Bar-di-Milano-COVER.jpg"
                             alt="">
@@ -33,7 +33,7 @@
                         </p>
 
                     </div>
-                    <div class="col order-1 order-sm-2">
+                    <div class="col order-1 order-sm-2 d-flex align-items-center">
                         <img class="img-fluid p-2"
                             src="https://www.enotecalacantinetta.com/wp-content/uploads/2022/04/mixology.jpg" alt="">
                     </div>
@@ -41,8 +41,8 @@
             </div>
             <div class="container pt-4 pb-4 d-flex gap-5">
                 <div class="row row-cols-1 row-cols-sm-2">
-                    <div class="col">
-                        <img class="img-fluid p-2"
+                    <div class="col d-flex align-items-center">
+                        <img class="img-fluid p-2 "
                             src="https://img.freepik.com/premium-photo/hipster-friends-toasting-multicolored-fancy-drinks-fashion-bar-trendy-people-having-fun-together-drinking-cocktails-happy-hour-food-beverage-party-time-concept-vivid-contrast-filter_101731-1248.jpg"
                             alt="">
                     </div>

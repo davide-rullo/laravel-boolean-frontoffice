@@ -6,8 +6,8 @@ export default {
 <template>
     <section id="footer" class="mt-3 pb-5">
         <div class="container">
-            <div class="row pt-5">
-                <div class="col-6 text-white">
+            <div class="d-flex pt-5 justify-content-around">
+                <div class="text-white">
                     <div>
 
                         <div class="d-flex gap-3 pt-5">
@@ -75,27 +75,32 @@ export default {
                 </div>
 
 
-                <div class="col-2 text-white pt-4 px-4">
+                <div class="text-white pt-4 px-4">
                     <h3>Quick Links</h3>
                     <ul class="list-unstyled d-flex flex-column gap-3 pt-4">
                         <li class="d-flex align-items-center gap-2">
                             <span>
-                                <a class="text-decoration-none text-white">🏡Home</a>
+                                <a class="text-decoration-none text-white">
+                                    <router-link class="nav-link effect" aria-current="page" to="/">🏡 Home</router-link>
+                                </a>
                             </span>
                         </li>
                         <li class="d-flex align-items-center gap-2">
                             <span>
-                                <a class="text-decoration-none text-white">🍸 Cocktails</a>
+                                <router-link class="nav-link effect" aria-current="page" to="/cocktails">🍸
+                                    Cocktails</router-link>
                             </span>
                         </li>
                         <li class="d-flex align-items-center gap-2">
                             <span>
-                                <a class="text-decoration-none text-white">💫 About Us</a>
+                                <router-link class="nav-link effect" aria-current="page" to="/about">💫 About
+                                    Us</router-link>
                             </span>
                         </li>
                         <li class="d-flex align-items-center gap-2">
                             <span>
-                                <a class="text-decoration-none text-white">📞 Contacts</a>
+                                <router-link class="nav-link effect" aria-current="page" to="/contacts">📞
+                                    Contacts</router-link>
                             </span>
                         </li>
                     </ul>

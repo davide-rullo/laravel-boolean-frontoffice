@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <nav class="bg-dark">
+    <nav class="my-bg">
         <div class="container">
             <ul class="list-unstyled d-flex justify-content-around text-white m-0 p-3">
                 <li><router-link class="nav-link effect" aria-current="page" to="/">HOME</router-link></li>
@@ -18,5 +18,9 @@ export default {
 <style scoped>
 .effect:hover {
     color: #fdd03b;
+}
+
+.my-bg {
+    background-color: black;
 }
 </style>

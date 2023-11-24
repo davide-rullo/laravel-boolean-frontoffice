@@ -24,14 +24,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
-    height: 70vh;
-}
-
 .jumbo {
     background-image: url('../assets/bar.jpg');
     background-size: cover;
-    margin-top: -65px;
     height: 1000px;
 }
 

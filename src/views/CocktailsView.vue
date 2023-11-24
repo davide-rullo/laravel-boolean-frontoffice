@@ -28,18 +28,17 @@ export default {
             <div class="container-fluid py-5 jumbotron">
                 <h1 class="display-5 fw-bold text-center pt-5 mt-5 primary">OUR COCKTAILS</h1>
                 <div class="d-flex justify-content-center my-4">
-                    <router-link  aria-current="page" to="/alcohol">
-                    <button class="btn btn-transparent mx-2">Alcoholic Drinks </button>
+                    <router-link aria-current="page" to="/alcohol">
+                        <button class="btn btn-transparent mx-2">Alcoholic Drinks </button>
                     </router-link>
-                    <router-link  aria-current="page" to="/alcohol_free">
-                    <button class="btn btn-transparent mx-2">Alcohol Free Drinks</button>
+                    <router-link aria-current="page" to="/alcohol_free">
+                        <button class="btn btn-transparent mx-2">Alcohol Free Drinks</button>
                     </router-link>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-    
 </template>
 
 
@@ -49,7 +48,7 @@ h3 {
 }
 
 .jumbotron {
-    background-image: url(https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg?w=1380&t=st=1700772488~exp=1700773088~hmac=e2df888e917208f1695de3f1fbb099827c5abcfe53e59fd62ced0bbbadff0696);
+    background-image: url(https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg?w=1380&t=st=1700843678~exp=1700844278~hmac=aab95bd0a0e990796e4dc82d8ba0183eb4b99de6d1cc41a9b118e68413ab9e78);
     background-size: cover;
     margin-top: -65px;
     height: 1000px;

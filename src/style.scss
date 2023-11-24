@@ -1,4 +1,13 @@
 @use 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+p {
+    font-size: 1.3rem;
+}
 
 a {
     text-decoration: none;

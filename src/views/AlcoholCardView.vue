@@ -30,7 +30,8 @@ export default {
         <div class="container ">
             <div v-if="nonAlcoholicCocktails">
                 <div v-for="(cocktail, index) in nonAlcoholicCocktails" :key="index">
-                    <router-link :to="'/cocktail/' + cocktail.id">
+        
+                     
                         <div class="row pb rounded justify-content-center  p-2 my-5">
                             <div class="col-lg-6 d-flex justify-content-center align-items-center p-0">
                                 <img class="my_img img-fluid " :src="cocktail.thumb" alt="">
@@ -56,9 +57,11 @@ export default {
                                 </div>
                             </div>
                         </div>
-                      </router-link>
+                                    
+                      
                     </div>
                 </div>
+              <router-link class="btn btn-dark v-25" aria-current="page" to="/cocktails">Go Back</router-link>
             </div>
     </section>
 </template>

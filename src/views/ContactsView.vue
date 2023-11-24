@@ -62,5 +62,6 @@ export default {
 
 .title {
     color: #fdd03b;
+
 }
 </style>

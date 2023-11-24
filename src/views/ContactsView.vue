@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="wrapper">
         <div class="">
             <div class="container py-5">
-                <h3 class="display-5 ">Contact us!</h3>
+                <h3 class="display-5 title">Contact us!</h3>
 
 
             </div>
@@ -53,4 +53,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.wrapper {
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+}
+
+.title {
+    color: #fdd03b;
+}
+</style>

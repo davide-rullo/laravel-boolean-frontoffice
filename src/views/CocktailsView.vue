@@ -4,7 +4,7 @@ export default {
     name: 'CocktailsView',
     data() {
         return {
-            cocktails: null,
+            cocktails: [],
             base_url: 'http://127.0.0.1:8000',
             cocktail_api: '/api/cocktails',
         }
@@ -14,71 +14,34 @@ export default {
             .get(this.base_url + this.cocktail_api)
             .then(response => {
                 console.log(response);
-                this.cocktails = response.data.result
+                this.cocktails = response.data.result;
             })
             .catch(err => {
                 console.error(err);
             })
     }
 }
-
 </script>
-
 <template>
     <div class="jumbotron">
         <div>
             <div class="container-fluid py-5 jumbotron">
                 <h1 class="display-5 fw-bold text-center pt-5 mt-5 primary">OUR COCKTAILS</h1>
+                <div class="d-flex justify-content-center my-4">
+                    <router-link  aria-current="page" to="/alcohol">
+                    <button class="btn btn-transparent mx-2">Alcoholic Drinks </button>
+                    </router-link>
+                    <router-link  aria-current="page" to="/alcohol_free">
+                    <button class="btn btn-transparent mx-2">Alcohol Free Drinks</button>
+                    </router-link>
+                    
+                </div>
             </div>
         </div>
     </div>
-    <section class="my_bg pt-5">
-        <div class="container">
-            <div v-if="cocktails">
-                <div v-for="cocktail in cocktails.data">
-                    <div>
-                        <div class="row pb">
-                            <div class="col-6">
-                                <img class="my_img" :src="cocktail.thumb" alt="">
-                            </div>
-                            <div class="col-6 text-white height text-center d-flex align-items-center">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="5" fill="currentColor"
-                                            class="bi bi-circle-fill primary" viewBox="0 0 16 16">
-                                            <circle cx="8" cy="8" r="8" />
-                                        </svg>
-                                        <h2 class="primary text-uppercase">{{ cocktail.name }}</h2>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="5" fill="currentColor"
-                                            class="bi bi-circle-fill primary" viewBox="0 0 16 16">
-                                            <circle cx="8" cy="8" r="8" />
-                                        </svg>
-
-                                    </div>
-
-                                    <p>{{ cocktail.preparation }}</p>
-                                    <p v-if="cocktail.alcoholic === 0">
-                                        Soft Drink 👼
-                                    </p>
-                                    <p v-else>
-                                        Alcohol Drink 😈
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div>
-                <div>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </template>
+
 
 <style lang="scss" scoped>
 h3 {
@@ -99,7 +62,7 @@ h3 {
 }
 
 .my_bg {
-    background-color: black;
+    background-color: rgb(35, 34, 34);
 }
 
 .my_img {
@@ -109,6 +72,20 @@ h3 {
 }
 
 .pb {
+    background-color: black;
     padding-bottom: 9rem;
+    border: 1px solid #fdd03b;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: #fdd03b;
+    border: 1px solid #fdd03b;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.btn-transparent:hover {
+    color: #fff;
 }
 </style>

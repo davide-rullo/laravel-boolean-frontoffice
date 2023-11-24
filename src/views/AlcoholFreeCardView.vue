@@ -1,0 +1,90 @@
+<script>
+import axios from 'axios';
+export default {
+    name: 'AlcoholFreeCardView',
+    data() {
+        return {
+            cocktails: null,
+            nonAlcoholicCocktails: [],
+            base_url: 'http://127.0.0.1:8000',
+            cocktail_api: '/api/cocktails',
+        }
+    },
+    mounted() {
+        axios
+            .get(this.base_url + this.cocktail_api)
+            .then(response => {
+                console.log(response);
+                this.cocktails = response.data.result;
+                this.nonAlcoholicCocktails = this.cocktails.data.filter(cocktail => cocktail.alcoholic !== 1);
+            })
+            .catch(err => {
+                console.error(err);
+            })
+    }
+}
+</script>
+<template>
+    <section class="my_bg py-5">
+        <div class="container">
+            <div v-if="nonAlcoholicCocktails">
+                <div v-for="(cocktail, index) in nonAlcoholicCocktails" :key="index">
+                    <router-link :to="'/cocktail/' + cocktail.id">
+                        <div class="row pb rounded justify-content-center  p-2 my-5">
+                            <div class="col-lg-6 d-flex justify-content-center align-items-center p-0">
+                                <img class="my_img img-fluid " :src="cocktail.thumb" alt="">
+                            </div>
+                            <div class="col-lg-12 text-white height text-center d-flex align-items-center py-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="5" fill="currentColor"
+                                            class="bi bi-circle-fill primary" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8" />
+                                        </svg>
+                                        <h2 class="primary text-uppercase">{{ cocktail.name }}</h2>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="5" fill="currentColor"
+                                            class="bi bi-circle-fill primary" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8" />
+                                        </svg>
+                                    </div>
+                                    <div>{{ cocktail.preparation }}
+                                    
+                                       <p> Soft Drink 👼</p>
+                                    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                </router-link>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+</template>
+
+<style lang="scss" scoped>
+h3 {
+    color: black;
+}
+
+.primary {
+    color: #fdd03b;
+}
+
+.my_bg {
+    background-color: rgb(35, 34, 34);
+}
+
+.my_img {
+    width: 350px;
+    height: 350px;
+    object-position: center;
+}
+
+.pb {
+    background-color: black;
+    border: 1px solid #fdd03b;
+}
+</style>

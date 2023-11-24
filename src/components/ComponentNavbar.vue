@@ -21,6 +21,11 @@ export default {
 }
 
 .my-bg {
-    background-color: black;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 </style>

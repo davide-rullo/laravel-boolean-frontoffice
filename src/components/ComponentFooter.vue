@@ -44,7 +44,7 @@ export default {
                                 </svg>
                             </div>
                             <div>
-                                example@example.com
+                                BooleanBar@Boolean.com
                             </div>
                         </div>
                         <div class="d-flex gap-4 pt-3">
